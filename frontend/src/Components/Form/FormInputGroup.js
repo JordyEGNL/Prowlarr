@@ -28,6 +28,7 @@ import TextArea from './TextArea';
 import TextInput from './TextInput';
 import TextTagInputConnector from './TextTagInputConnector';
 import styles from './FormInputGroup.css';
+import PrivacyTextInput from 'Components/Form/PrivacyTextInput';
 
 function getComponent(type) {
   switch (type) {
@@ -96,6 +97,9 @@ function getComponent(type) {
 
     case inputTypes.TAG_SELECT:
       return TagSelectInputConnector;
+
+    case inputTypes.PRIVACY_TEXT:
+      return PrivacyTextInput;
 
     default:
       return TextInput;
